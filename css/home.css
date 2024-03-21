@@ -1,0 +1,71 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+#svg {
+    width: 40%;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+path {
+    fill: #000;
+    stroke-width: 2;
+    stroke: #f1f1f1f1;
+    stroke-dasharray: 3000px;
+    stroke-dashoffset: 3000px;
+    animation: anim-svg 3.5s ease-in-out forwards;
+}
+
+@keyframes anim-svg {
+    
+to {
+    stroke-dashoffset: 0;
+}
+
+}
+
+.btn a {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #f1f1f1f1;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease-out;
+    animation: anim-link 6.5s ease-in-out forwards;
+}
+
+.btn a:hover {
+    color: #8c14dc;
+    transition: all .3s ease-out;
+}
+
+@keyframes anim-link {
+    
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+    }
+

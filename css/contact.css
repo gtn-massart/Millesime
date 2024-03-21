@@ -1,0 +1,179 @@
+
+
+/* ******************** CONTACT PAGE ******************** */
+
+.contactImgContainer {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../pictures/contact.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .7;
+}
+
+.contactTitle {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 15rem;
+  font-family: 'IM Fell English SC', serif;
+  color: #f1f1f1;
+}
+
+
+/* ********** FORMULARY ********** */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7rem 0rem 10rem 0rem;
+}
+.inputForm {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 2rem;
+}
+
+.inputInForm, label, button {
+  transition: all .3s;
+}
+
+label {
+  transform: translate(1rem, -1.5rem);
+  cursor: text;
+  transform-origin: left top;
+  position: absolute;
+  font-size: 2.2rem;
+  font-family: 'IM Fell English SC', serif;
+  color: #f1f1f1;
+}
+
+.messageLabel {
+  position: relative;
+  top: -2rem;
+  margin-top: 3rem;
+}
+
+.inputInForm {
+  border: none;
+  outline: none;
+  background-color: #000;
+  border-bottom: .2rem solid #f1f1f1;
+  color: #f1f1f1;
+  font-size: 2rem;
+  width: 50rem;
+}
+
+.inputInForm::placeholder {
+  opacity: 0;
+}
+
+.inputInForm:focus,
+.inputInForm:not(:placeholder-shown) {
+  border-bottom: .2rem solid #8c14dc;
+}
+
+.inputInForm:not(:placeholder-shown) ~ label,
+.inputInForm:focus ~ label {
+  transform: translate(1rem, -3rem) scale(.8);
+  color: #8c14dc;
+}
+
+#message {
+  border: none;
+  outline: none;
+  border: 2px solid #f1f1f1;
+  width: 50rem;
+  height: 25rem;
+  border-radius: 1rem;
+  background-color: #000;
+  color: #f1f1f1;
+  font-size: 2.2rem;
+  font-family: 'Cormorant', serif;
+  font-weight: bold;
+  padding: 1.5rem
+}
+
+#message:focus,
+#message:not(:placeholder-shown) {
+  border: .2rem solid #8c14dc;
+}
+
+#message:not(:placeholder-shown) ~ label,
+#message:focus ~ label {
+  color: #8c14dc;
+}
+
+
+/* ********** BUTTON ********** */
+
+#buttonLink {
+  width: 15rem;
+  height: 5.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#buttonLink {
+  display: block;
+  width: 15rem;
+  height: 5.5rem;
+  line-height: 5.5rem;  
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-family: 'IM Fell English SC', serif;
+  color: #f1f1f1;
+  background-color: #000;
+  border: .1rem solid #f1f1f1;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  transition: all .5s;
+}
+
+#buttonLink:hover {
+  border-color: #600a99;
+  font-size: 2.4rem;
+  transition: all .5s;
+}
+
+#buttonLink::before {
+  content: "";
+  position: absolute;
+  top: 5.5rem;
+  left: 0rem;
+  width: 100%;
+  height: 100%;
+  background-color: #600a99;
+  border-radius: 50% 50% 0 0;
+  transition: all .5s;
+  z-index: -1;
+}
+
+#buttonLink:hover::before {
+  top: 0rem;
+  border-radius: 0 0 0 0;
+}
+
+
+/* ********** MAP ********** */
+
+.mapTitle {
+  color: #f1f1f1;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+#map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageMap {
+  margin-bottom: 10rem;
+  cursor: pointer;
+}
